@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "B6u/vFCICgTqQMkOkdKooTHC4LKauOgQowWXP98yKQ/VH0dKbIT3ZhgC05NvkgVmS9eEPt1jvA9NOTPpaQYAtw==",
+  "success": true,
+  "projectFilePath": "E:\\chatapp\\ChatApp\\ChatApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Umesh\\.nuget\\packages\\microsoft.typescript.msbuild\\3.9.2\\microsoft.typescript.msbuild.3.9.2.nupkg.sha512"
+  ],
+  "logs": []
+}

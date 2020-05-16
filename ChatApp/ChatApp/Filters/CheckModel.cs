@@ -1,0 +1,29 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ChatApp.Filters
+{
+    public class CheckModel : ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (!context.ModelState.IsValid)
+            {
+                context.Result = new BadRequestObjectResult(context.ModelState);
+            }
+        }
+
+        public override void OnActionExecuted(ActionExecutedContext context)
+        {
+            if (context.Exception != null )
+            {
+                context.Result = new ObjectResult(context.Exception.Message);
+                context.ExceptionHandled = true;
+            }
+        }
+    }
+}
